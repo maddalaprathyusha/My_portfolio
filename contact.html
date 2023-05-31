@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prathyusha-software developer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+        
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="C:\Users\PRATYU\Desktop\projects\personal_portfolio\intro.html">Intro</a></li>
+                <li><a href="C:\Users\PRATYU\Desktop\projects\personal_portfolio\projects.html">projects</a></li>
+                <li><a href="C:\Users\PRATYU\Desktop\projects\personal_portfolio\skills.html">skills</a></li>
+                <li><a href="C:\Users\PRATYU\Desktop\projects\personal_portfolio\contact.html">Contact</a></li>
+              
+            </ul>
+        </nav>
+    </div>
+    <div class="main">
+        <div class="contactform">
+          <h1>Contact me for work/Enquiries </h1>
+            <form>
+                <div class="mb-3">
+                  <label for="clientemail" class="form-label">Name</label>
+                  <input type="name" class="form-control" id="clientemail" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="clientemail" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="clientemail" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="clientphone" class="form-label">Phone</label>
+                  <input type="phone" class="form-control" id="clientphone">
+                </div>
+      
+                <div class="mb-3"  id= "form-check">
+                  <input type="checkbox" class="form-check-input" id="isclient">
+                  <label class="form-check-label" for="isclient">i want you to work on project </label>
+                </div>
+                <div class="buttons"></div>
+                <button type="submit" class="btn btn-sm">Submit</button>
+              </form>
+            
+        </div>
+         
+    </div>  
+</div>
+<script>
+  // Function to display the popup message
+  function showPopup() {
+    alert('Thank you for submitting!');
+  }
+
+  // Get the contact form element
+  const contactForm = document.querySelector('form');
+
+  // Add a submit event listener to the form
+  contactForm.addEventListener('submit', (e) => {
+    e.preventDefault(); // Prevent the form from submitting
+
+    // Perform any form validation or data processing here
+
+    // Call the showPopup function after processing the form
+    showPopup();
+  });
+</script>  
+</body>
+</html>
